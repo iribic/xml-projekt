@@ -1,0 +1,36 @@
+{
+    "Recenzije": {
+        "Recenzija": [
+            {
+                "Kategorija": "Glazba",
+                "Naziv": "Harrison Bergeron - Dead Bergeron",
+                "Zanr": "Screamo"
+            },
+            {
+                "Kategorija": "Glazba",
+                "Naziv": "John Fahey - Fare Forward Voyagers (Soldier's Choice)",
+                "Zanr": "American Primitivism"
+            },
+            {
+                "Kategorija": "Film",
+                "Naziv": "Throw Away Your Books, Rally in the Streets",
+                "Zanr": "Drama"
+            },
+        {
+                "Kategorija": "Film",
+                "Naziv": "Black Midi - Cavalcade",
+                "Zanr": "Avant-Prog"
+            },
+            {
+                "Kategorija": "Film",
+                "Naziv": "Good Morning",
+                "Zanr": "Komedija"
+              },
+              {
+                "Kategorija": "Film",
+                "Naziv": "Fallen Angels",
+                "Zanr": "Drama"
+              }
+        ]
+    }
+}

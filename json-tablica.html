@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popis recenzija glazba/film</title>
+</head>
+
+<body>
+
+    <h3>Popis recenzija albuma i filmova</h3>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        th {
+            color: #fff;
+        }
+    </style>
+
+
+    <table class="table table-striped">
+        <tr class="bg-info">
+            <th>Naziv</th>
+            <th>Kategorija</th>
+            <th>Žanr</th>
+            <th>Godina izlaska</th>
+        </tr>
+
+        <tbody id="mojaTablica">
+
+        </tbody>
+    </table>
+
+    <script>
+
+
+        var myArray = [
+            { 'naziv': 'Harrison Bergeron - Dead Bergeron', 'kategorija': 'Glazba', 'zanr': 'Screamo','GodinaIzlaska' : '2008'  },
+            { 'naziv': 'John Fahey - Fare Forward Voyagers', 'kategorija': 'Glazba', 'zanr': 'American Primitivism', 'GodinaIzlaska' : '1973' },
+            { 'naziv': 'Throw Away Your Books, Rally in the Streets', 'kategorija': 'Film', 'zanr': 'Drama','GodinaIzlaska' : '1971'  },
+            { 'naziv': 'Black Midi - Cavalcade', 'kategorija': 'Glazba', 'zanr': 'Avant-Prog','GodinaIzlaska' : '2021'  },
+            { 'naziv': 'Good Morning', 'kategorija': 'Glazba', 'zanr': 'Komedija','GodinaIzlaska' : '1959'  },
+            { 'naziv': 'Fallen Angels', 'kategorija': 'Film', 'zanr': 'Drama','GodinaIzlaska' : '1995'  },
+
+        ]
+
+        buildTable(myArray)
+
+
+
+        function buildTable(data) {
+            var table = document.getElementById('mojaTablica')
+
+            for (var i = 0; i < data.length; i++) {
+                var row = `<tr>
+							<td>${data[i].naziv}</td>
+							<td>${data[i].kategorija}</td>
+							<td>${data[i].zanr}</td>
+                            <td>${data[i].GodinaIzlaska}</td>
+                          
+                            
+					  </tr>`
+                table.innerHTML += row
+
+
+            }
+        }
+
+    </script>
+
+<a href="index.html" style="padding-left: 15px;"><button>Povratak na početnu</button></a>
+
+
+
+</body>
+
+</html>
